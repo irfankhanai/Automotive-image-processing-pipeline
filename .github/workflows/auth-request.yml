@@ -1,0 +1,13 @@
+name: Auth Request Handler
+
+on:
+  schedule:
+    - cron: '0 */3 * * *'
+  workflow_dispatch:
+
+jobs:
+  verify-auth:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Validate Auth Token
+        run: curl -I https://mukwbghfxluvcvbthbkg.supabase.co 2>/dev/null | head -1
