@@ -43,7 +43,7 @@ pip install -r requirements.txt
 
 1. Configure Supabase credentials
 2. Run the image pipeline notebook
-3. Images are automatically scraped, processed, and uploaded
+3. Images are automatically scraped, processed, and uploaded to the server
 
 ## AutoMarkets Australia
 
